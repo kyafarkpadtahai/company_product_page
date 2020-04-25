@@ -5,11 +5,17 @@
 }
 body,button{
     font-family: 'Exo', sans-serif;
+    cursor: pointer;
+}
+.header{
+    background-color: rgb(236, 210, 170);
+    border-bottom: 3px solid black;
 }
 header{
     display: flex;
-    width: 80%;
+    width:90%;
     height: 10vh;
+    
     margin: auto;
 }
 .logo-container{
@@ -27,6 +33,7 @@ header{
 .nav-links li{
     list-style: none;
     margin: auto;
+    padding:10px 50px;
 }
 .nav-link{
     text-decoration: none;
@@ -36,10 +43,17 @@ header{
     font-weight: bolder;
     background-color: beige;
 }
+.login a{
+    text-decoration: none;
+    color: white;
+    padding: 7px 16px; 
+
+}
 .login-signup{
     flex:3;
     justify-content: space-around;
     flex-wrap: wrap;
+    filter: drop-shadow(0px 2px 2px black);
 }
 .logo-container,.nav-links,.login-signup {
     display: flex;
@@ -56,7 +70,8 @@ header{
 section{
     display: flex;
     width: 80%;
-    margin:auto;
+    margin: auto 250px;
+    padding:60px 0;
 }
 .product{
     flex:1;
@@ -82,7 +97,23 @@ section{
     animation: drop 1.5s ease-in;
 }
 .img-laptop{
-    height: 75vh;
+    height: 60vh;
+}
+.img-phone{
+    height:40vh;
+}
+.footer-container{
+    background-color: rgb(236, 210, 170);
+    text-align: center;
+}
+.logo-footer img{
+    padding-top: 15px;
+    height: 10vh;
+    padding-bottom: 15px;
+}
+
+.social-icon img{
+        height: 50px;
 }
 
 @keyframes drop{
@@ -112,4 +143,111 @@ section{
     .img-laptop{
         height:50vh;
     }
+}
+
+.coverpic{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(img/cover_pic.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    margin: -10px;
+}
+
+.form-box{
+    height: 620px;
+    width: 480px;
+    background-color: white;
+    position: relative;
+    margin: 6% auto;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.button-box{
+    width:250px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px rgb(168, 167, 167);
+    border-radius: 30px;
+
+}
+
+.toggle-button{
+    padding: 15px 35px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    color:black;
+    font-weight: bolder;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+}
+#btn{
+    top: 0;
+    left:0;
+    position: absolute;
+    width: 140px;
+    height: 100%;
+
+    background: rgb(236, 210, 170);
+    border-radius: 30px;
+}
+
+.social-icon{
+    margin: 30px auto;
+    cursor: pointer;
+    text-align: center;
+}
+.social-icon img{
+    padding: 10px 10px;
+}
+
+.input-group{
+    top: 250px;
+    position: absolute;
+    width: 300px;
+    transition: .5s;
+}
+.input-field{
+    width:100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.submit-button{
+    width:85%;
+    padding:10px 30px;
+    display: block;
+    margin: auto;
+    background: rgb(236, 210, 170);
+    border-radius: 30px;
+    border:0;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox{
+    margin: 30px 10px 30px 0;
+}
+
+span{
+    color:#777;
+    position: absolute;
+    font-size: 12px;
+    bottom: 68px;
+
+}
+#login{
+    left: 100px;
+}
+#register{
+    left:550px;
 }
