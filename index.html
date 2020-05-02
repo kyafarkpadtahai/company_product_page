@@ -1,70 +1,107 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Company name </title>
-        <link href="stylesheet.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Exo:wght@500&family=Merienda:wght@700&display=swap" rel="stylesheet"> 
 
-    </head>
-    <body>
-        <div class="header">
-        <header>
-            <div class="logo-container">
-                <img src="img/logo.svg" alt="logo">
-                <h4 class="company-name">Company name</h3>
+<head>
+    <title>Company name </title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <link href="stylesheet.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@500&family=Merienda:wght@700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar nav-background navbar-expand-sm fixed-top">
+        <div class="container">
+            <span><img src="img/logo.svg" alt="logo"></span>
+            <a href="#" class="navbar-brand text-white mr-auto">Company name</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+                    <li class="nav-item d-block d-sm-none"><a class="nav-link" href="#">Login/Signup</a></li>
+                </ul>
             </div>
-            <nav class = "nav-links">
-                <li><a href="#" class="nav-link">Home</a></li>
-                <li><a href="#" class="nav-link">Contacts</a></li>
-                <li><a href="#" class="nav-link">About</a></li>
-            </nav>
-            <div class="login-signup">
-                <button class="login" ><a href="login.html">Login</a></button>
-                <button class="sign-up">Sign-up</button>
-                <img src="img/cart.svg" alt="cart">
+            <div class="btn-group" role="group">
+                <a role="button" class="btn btn-primary">Login</a>
+                <a role="button" class="btn btn-success">Sign-up</a>
+            </div class="d-none  d-sm-block">
+            <div>
+                <a href="#"><img src="img/cart.svg" alt="cart"></a>
             </div>
-        </header>
         </div>
-        <main>
-            <section>
-                <div class="product">
+    </nav>
+    <main>
+        <div class="container">
+            <div class="row row-content align-items-center">
+                <div class="col-12 col-sm-5">
                     <h3 class="product-heading">Some product</h3>
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste eius explicabo ex. Assumenda optio unde rem, reprehenderit aut at nam nihil vitae. Molestias atque non optio rem consequuntur assumenda magni.</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste eius explicabo
+                        ex.
+                        Assumenda optio unde rem, reprehenderit aut at nam nihil vitae. Molestias atque non optio rem
+                        consequuntur assumenda magni.</p>
                     <button class="orderbutton">Order now</button>
                 </div>
-                <div class="product-img">
-                    <img class="img-laptop" src="img/matebook.png" alt="" srcset="">
-                </div>
-                
-            </section>
-            <section>
-                <div class="product-img">
-                    <img class="img-phone" src="img/sa" alt="" srcset="">
-                </div>
-                <div class="product">
-                    <h3 class="product-heading">Some product</h3>
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste eius explicabo ex. Assumenda optio unde rem, reprehenderit aut at nam nihil vitae. Molestias atque non optio rem consequuntur assumenda magni.</p>
-                    <button class="orderbutton">Order now</button>
-                </div>
-            </section>
-        </main>
-        <script type="text/javascript">
-            document.getElementsByClassName("login").onclick = function () {
-            window.location = window.location.href.replace("index.html","login.html");
-            };
-        </script>
-        <footer>
-            <div class="footer-container">
-                <div class="logo-footer">
-                    <img src="img/logo.svg">
-                    <h4>9898xxxxxx</h4>
-                    <h4>contact@xyz.com</h4>
-                </div>
-                <div class="social-icon">
-                    <img src="img/facebook.svg">
-                    <img src="img/instagram-circle.svg">
+                <div class="col-12 col-sm-7 width:30% height:auto">
+                    <img class="img-laptop img-fluid" src="img/matebook.png" alt="" srcset="">
                 </div>
             </div>
-        </footer>
-    </body>
+            <div class="row row-content align-items-center">
+                <div class="col-12 col-sm-7">
+                    <img class="img-fluid" src="img/sa" alt="" srcset="">
+                </div>
+                <div class="col-12 col-sm-5">
+                    <h3 class="product-heading">Some product</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste eius explicabo
+                        ex.
+                        Assumenda optio unde rem, reprehenderit aut at nam nihil vitae. Molestias atque non optio rem
+                        consequuntur assumenda magni.</p>
+                    <button class="orderbutton">Order now</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a>Home</a></li>
+                        <li><a>Contact</a></li>
+                        <li><a>Home</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>Marlane Street,<br> 
+                        23 block, some <br>
+                        imaginary place<br>
+                        <i class="fa fa-phone"> 422324552</i>
+                    </address>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <a class="btn btn-so btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                    <a class="btn btn-so btn-envelope" href="http://www.gmail.com/"><i class="fa fa-lg fa-envelope-o "></i></a>
+                    <a class="btn btn-so btn-facebook" href="http://www.twittwr.com"><i class="fa fa-lg fa-twitter"></i></a>
+                    <a class="btn btn-so btn-instagram" href="http://www.twittwr.com"><i class="fa fa-lg fa-instagram"></i></a>
+                    
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <p>© Copyright 2018 </p>
+            </div>
+        </div>
+    </footer>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
 </html>
