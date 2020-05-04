@@ -9,3 +9,8 @@
 main{
     margin: 80px 60px;
 }
+
+.jumbotron{
+    margin: 0px 0px;
+    padding: 40px 30px;
+}
