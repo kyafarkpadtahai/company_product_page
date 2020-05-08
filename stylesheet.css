@@ -4,13 +4,13 @@
 }
 .row-content{
     border-bottom: 1px solid #a09e9d;
-    padding: 80px;
+    padding: 80px 0px;
 }
 main{
     margin: 80px 60px;
 }
 
 .jumbotron{
-    margin: 0px 0px;
-    padding: 40px 30px;
+    margin: 70px 0px 40px 0px;
+    padding: 15px 30px;
 }
