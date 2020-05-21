@@ -1,16 +1,33 @@
-.nav-background{
-    background-color: #ff9933;
+.nav-background {
+    background-color: #390099;
     padding: 15px 0px 15px 0px;
 }
-.row-content{
+
+.row-content {
     border-bottom: 1px solid #a09e9d;
     padding: 80px 0px;
 }
-main{
+
+main {
     margin: 80px 60px;
 }
 
-.jumbotron{
+.jumbotron {
     margin: 70px 0px 40px 0px;
     padding: 15px 30px;
+    background-color: #ff0054;
+    color: white;
+}
+
+.jumbotron .row {
+    height: 500px;
+}
+
+.masthead-container {
+    z-index: 1;
+}
+
+.rounded-circle-1 {
+    height: 500px;
+    width: 500px;
 }
