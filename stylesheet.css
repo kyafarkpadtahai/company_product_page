@@ -23,11 +23,18 @@ main {
     height: 500px;
 }
 
-.masthead-container {
-    z-index: 1;
+.card-container{
+    padding-bottom: 20px;
 }
+.card{
+    background: linear-gradient(pink, white);
+    box-shadow: rgb(0, 0, 0);
+    transition: all .2s ease-in-out;
+}
+.card:hover{
 
-.rounded-circle-1 {
-    height: 500px;
-    width: 500px;
+    transform: scale(1.05, 1.05);
+}
+.card-content{
+    margin: 50px 50px;
 }
